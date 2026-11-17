@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/code.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="inner-header">
+            <a href="index.html">
+                <div class="logo-name">
+                    <div class="img logo"></div>
+                    <div class="name">
+                        <h2>Автобусный мир</h2>
+                        <p>Поедки по РЯЗАНЩИНЕ</p>
+                    </div>
+                </div>
+            </a>
+
+            <div class="burnav" id="burnav">
+                <div class="hamburger-close" id="hamburger-close">
+                    <h2>Х</h2>
+                </div>
+                <ul class="nav-burnav">
+                    <a class="burnav-link" href="index.html#sec-sales">
+                        <li class="burnav-opt">
+                            Акции
+                        </li>
+                    </a>
+                    <a class="burnav-link" href="search.html">
+                        <li class="burnav-opt">
+                            Поиск
+                        </li>
+                    </a>
+                    <a class="burnav-link" href="booking.html">
+                        <li class="burnav-opt">
+                            Регистрация на рейс
+                        </li>
+                    </a>
+                    <a class="burnav-link" href="profile.html">
+                        <li class="burnav-opt">
+                            Личный кабинет
+                        </li>
+                    </a>
+                </ul>
+            </div>
+
+            <ul class="nav-header">
+                <a class="burnav-link" href="index.html#sec-sales">
+                    <li class="nav-opt">
+                        Акции
+                    </li>
+                </a>
+                <a class="burnav-link" href="search.html">
+                    <li class="nav-opt">
+                        Поиск
+                    </li>
+                </a>
+                <a class="burnav-link" href="booking.html">
+                    <li class="nav-opt">
+                        Регистрация на рейс
+                    </li>
+                </a>
+                <a class="burnav-link" href="profile.html">
+                    <li class="nav-opt">
+                        Личный кабинет
+                    </li>
+                </a>
+            </ul>
+
+            <div id="hamburger-button" class="hamburger-button">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+
+
+        </div>
+    </header>
+
+    <main>
+        <div class="inner-main">
+
+            <div class="section sec-facts">
+                <h3>Мы покажем вам нашу область с новой стороны</h3>
+                <!-- <div class="facts">
+                    <p class="font-header" id="fact-1">Выберете дату поездки</p>
+                    <p class="font-header" id="fact-2">Набирите более 50% бронирований за рейс</p>
+                    <p class="font-header" id="fact-3">Получите снижение стомости</p>
+                </div>
+                <div class="facts-bg"></div> -->
+            </div>
+
+            <div class="section sec-search">
+                <div class="search">
+                    <a href="search.html">
+                        <div class="img search-icon"></div>
+                    </a>
+                    <div class="search-fields">
+                        <label for="search-field-from-input" class="search-field" id="search-field-from">
+                            <p class="font-plus">Откуда</p>
+                            <input type="text" maxlength="100" placeholder="Город, ООТ" name="search-field-from-input" id="search-field-from-input">
+                        </label>
+
+                        <label for="search-field-to-input" class="search-field" id="search-field-to">
+                            <p class="font-plus">Куда</p>
+                            <input type="text" maxlength="100" placeholder="Город, ООТ" name="search-field-to-input" id="search-field-to-input">
+                        </label>
+
+                        <label for="search-field-from-when-input" class="search-field" id="search-field-from-when">
+                            <p class="font-plus">Когда туда?</p>
+                            <input type="text" placeholder="Дата выезда туда" name="search-field-from-when-input" id="search-field-from-when-input">
+                        </label>
+
+                        <label for="search-field-to-when-input" class="search-field" id="search-field-to-when">
+                            <p class="font-plus">Когда обратно?</p>
+                            <input type="text" placeholder="Дата выезда обратно" name="search-field-to-when-input" id="search-field-to-when-input">
+                        </label>
+
+                        <label for="search-field-amount-input" class="search-field" id="search-field-amount">
+                            <p class="font-plus">Сколько?</p>
+                            <input type="number" readonly placeholder="Количество пассажиров" name="search-field-amount-input" id="search-field-amount-input" >
+                        </label>
+
+                        <button class="but-icon but-swap" id="but-swap"></button>
+                    </div>
+
+                    <button class="search-but" onclick="window.location='search.html'">Вперед</button>
+                </div>
+
+                <div class="search-more" id="search-more">
+                    <div class="from-list l" id="from-list">
+                        <ul class="l" id="fr-l">
+                            <li class="opt-from">Алмазово</li>
+                            <li class="opt-from">Агро-Пустынь</li>
+                            <li class="opt-from">Аделено</li>
+                            <li class="opt-from">Агеево</li>
+                            <li class="opt-from">Аладьино</li>
+                        </ul>
+                    </div>
+
+                    <div class="to-list" id="to-list">
+                        <ul class="l" id="to-l">
+                            <li class="opt-to">Алмазово</li>
+                            <li class="opt-to">Агро-Пустынь</li>
+                            <li class="opt-to">Аделено</li>
+                            <li class="opt-to">Агеево</li>
+                            <li class="opt-to">Аладьино</li>
+                        </ul>
+                    </div>
+
+                    <div class="from-when-list l" id="fr-when-l">
+                        <div class="month">
+                            <div class="prev-month"></div>
+                            <p>январь 2026</p>
+                            <div class="next-month"></div>
+                        </div>
+                        <table class="calendar">
+                            <tr>
+                                <td class="calendar-weakday">Пн</td>
+                                <td class="calendar-weakday">Вт</td>
+                                <td class="calendar-weakday">Ср</td>
+                                <td class="calendar-weakday">Чт</td>
+                                <td class="calendar-weakday">Пт</td>
+                                <td class="calendar-weakday">Сб</td>
+                                <td class="calendar-weakday">Вс</td>
+                            </tr>
+                            <tr>
+                                <td class="calendar-not-this-month">29</td>
+                                <td class="calendar-not-this-month">30</td>
+                                <td class="calendar-not-this-month">31</td>
+                                <td class="calendar-this-month">1</td>
+                                <td class="calendar-this-month">2</td>
+                                <td class="calendar-this-month">3</td>
+                                <td class="calendar-this-month">4</td>
+                            </tr>
+                            <tr>
+                                <td class="calendar-this-month">5</td>
+                                <td class="calendar-this-month">6</td>
+                                <td class="calendar-this-month today">7</td>
+                                <td class="calendar-this-month">8</td>
+                                <td class="calendar-this-month">9</td>
+                                <td class="calendar-this-month">10</td>
+                                <td class="calendar-this-month">11</td>
+                            </tr>
+                            <tr>
+                                <td class="calendar-this-month">12</td>
+                                <td class="calendar-this-month">13</td>
+                                <td class="calendar-this-month">14</td>
+                                <td class="calendar-this-month">15</td>
+                                <td class="calendar-this-month">16</td>
+                                <td class="calendar-this-month">17</td>
+                                <td class="calendar-this-month">18</td>
+                            </tr>
+                            <tr>
+                                <td class="calendar-this-month">19</td>
+                                <td class="calendar-this-month">20</td>
+                                <td class="calendar-this-month">21</td>
+                                <td class="calendar-this-month">22</td>
+                                <td class="calendar-this-month">23</td>
+                                <td class="calendar-this-month">24</td>
+                                <td class="calendar-this-month">25</td>
+                            </tr>
+                            <tr>
+                                <td class="calendar-this-month">26</td>
+                                <td class="calendar-this-month">27</td>
+                                <td class="calendar-this-month">28</td>
+                                <td class="calendar-this-month">29</td>
+                                <td class="calendar-this-month">30</td>
+                                <td class="calendar-this-month">31</td>
+                                <td class="calendar-not-this-month">1</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="to-when-list l" id="to-when-l">
+                        <div class="month">
+                            <div class="prev-month"></div>
+                            <p>январь 2026</p>
+                            <div class="next-month"></div>
+                        </div>
+
+                        <table class="calendar">
+                            <tr>
+                                <td class="calendar-weakday">Пн</td>
+                                <td class="calendar-weakday">Вт</td>
+                                <td class="calendar-weakday">Ср</td>
+                                <td class="calendar-weakday">Чт</td>
+                                <td class="calendar-weakday">Пт</td>
+                                <td class="calendar-weakday">Сб</td>
+                                <td class="calendar-weakday">Вс</td>
+                            </tr>
+                            <tr>
+                                <td class="calendar-not-this-month">29</td>
+                                <td class="calendar-not-this-month">30</td>
+                                <td class="calendar-not-this-month">31</td>
+                                <td class="calendar-this-month">1</td>
+                                <td class="calendar-this-month">2</td>
+                                <td class="calendar-this-month">3</td>
+                                <td class="calendar-this-month">4</td>
+                            </tr>
+                            <tr>
+                                <td class="calendar-this-month">5</td>
+                                <td class="calendar-this-month">6</td>
+                                <td class="calendar-this-month today">7</td>
+                                <td class="calendar-this-month">8</td>
+                                <td class="calendar-this-month">9</td>
+                                <td class="calendar-this-month">10</td>
+                                <td class="calendar-this-month">11</td>
+                            </tr>
+                            <tr>
+                                <td class="calendar-this-month">12</td>
+                                <td class="calendar-this-month">13</td>
+                                <td class="calendar-this-month">14</td>
+                                <td class="calendar-this-month">15</td>
+                                <td class="calendar-this-month">16</td>
+                                <td class="calendar-this-month">17</td>
+                                <td class="calendar-this-month">18</td>
+                            </tr>
+                            <tr>
+                                <td class="calendar-this-month">19</td>
+                                <td class="calendar-this-month">20</td>
+                                <td class="calendar-this-month">21</td>
+                                <td class="calendar-this-month">22</td>
+                                <td class="calendar-this-month">23</td>
+                                <td class="calendar-this-month">24</td>
+                                <td class="calendar-this-month">25</td>
+                            </tr>
+                            <tr>
+                                <td class="calendar-this-month">26</td>
+                                <td class="calendar-this-month">27</td>
+                                <td class="calendar-this-month">28</td>
+                                <td class="calendar-this-month">29</td>
+                                <td class="calendar-this-month">30</td>
+                                <td class="calendar-this-month">31</td>
+                                <td class="calendar-not-this-month">1</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="amount-list l" id="amount-l">
+                        <button class="but-icon amount-minus" id="amount-minus" onclick="if (document.getElementById('amount-list-number').value > 1) {document.getElementById('amount-list-number').value--;document.getElementById('search-field-amount-input').value = document.getElementById('amount-list-number').value;}"></button>
+                        <input type="number" readonly min="0" max="12" id="amount-list-number" name="amount-list-number" value="1">
+                        <button class="but-icon amount-plus" id="amount-plus" onclick="if (document.getElementById('amount-list-number').value < 12) {document.getElementById('amount-list-number').value++; document.getElementById('search-field-amount-input').value = document.getElementById('amount-list-number').value;}"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section sec-concepts">
+                <h3>Бронируйте больше, платите меньше:</h3>
+                <div class="concepts">
+                    <label for="concept-date" class="concept">
+                        <p class="font-header">Выберете дату</p>
+                        <input type="text" placeholder="Начните вводить.." id="concept-date" name="concept-date">
+                    </label>
+
+                    <div class="img symbol-plus"></div>
+
+                    <label for="concept-amount" class="concept">
+                        <p class="font-header">Введите число бронирований</p>
+                        <input type="number" min="0" max="12" placeholder="Начните вводить.." id="concept-amount" name="concept-amount">
+                    </label>
+
+                    <div class="img symbol-equal"></div>
+
+                    <label for="concept-res" class="concept">
+                        <p class="font-header">Получите скидку</p>
+                        <input type="text" readonly placeholder="Итоговая стоимость" id="concept-res" name="concept-res">
+                    </label>
+                </div>
+            </div>
+
+            <div class="section sec-sales" id="sec-sales">
+                <h3>Не пропустите наши акции:</h3>
+                <div class="list-sales">
+                    <div class="sale" id="sale-1">
+                        <div class="img sale-img-bg"></div>
+                        <div class="img sale-img"></div>
+                        <p class="font-header sale-name">Название акции</p>
+                        <p class="sale-info">
+                            Описание
+                            <br> лала
+                            <br>ла
+                        </p>
+                        <button class="but-icon but-more sale-but-more"></button>
+                    </div>
+
+                    <div class="sale" id="sale-2">
+                        <div class="img sale-img-bg"></div>
+                        <div class="img sale-img"></div>
+                        <p class="font-header sale-name">Название акции</p>
+                        <p class="sale-info">
+                            Описание
+                            <br> лала
+                            <br>ла
+                        </p>
+                        <button class="but-icon but-more sale-but-more"></button>
+                    </div>
+
+                    <div class="sale" id="sale-3">
+                        <div class="img sale-img-bg"></div>
+                        <div class="img sale-img"></div>
+                        <p class="font-header sale-name">Название акции</p>
+                        <p class="sale-info">
+                            Описание
+                            <br> лала
+                            <br>ла
+                        </p>
+                        <button class="but-icon but-more sale-but-more"></button>
+                    </div>
+
+                    <div class="sale" id="sale-4">
+                        <div class="img sale-img-bg"></div>
+                        <div class="img sale-img"></div>
+                        <p class="font-header sale-name">Название акции</p>
+                        <p class="sale-info">
+                            Описание
+                            <br> лала
+                            <br>ла
+                        </p>
+                        <button class="but-icon but-more sale-but-more"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section sec-comments">
+                <h3>Пользователи о нас:</h3>
+                <div class="slide-comment">
+                    <button class="prev-comment but-icon"  id="prev-comment"></button>
+
+                    <div class="comment" id="comment-1">
+                        <div class="img comment-img"></div>
+                        <div class="comment-info">
+                            <p class="font-plus comment-info-date">02.02.2026</p>
+                            <p class="comment-info-name">Валентин Валентинович</p>
+                            <p class="comment-info-text">
+                                Это пятая зона, стоимость билета тридцать пять копеек, поезд идет час двадцать, северная ветка, ветка акации или, скажем, сирени, цветет белыми цветами, пахнет креозотом, пылью тамбура, куревом, маячит вдоль полосы отчуждения, вечером на цыпочках возвращается
+                                в сад и вслушивается в движение электрических поездов, вздрагивает от шорохов, потом цветы закрываются и спят, уступая настояниям заботливой птицы по имени найтингейл
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="comment" id="comment-2" style="display: none;">
+                        <div class="img comment-img"></div>
+                        <div class="comment-info">
+                            <p class="font-plus comment-info-date">02.02.2026</p>
+                            <p class="comment-info-name">Валентин Валерьевич</p>
+                            <p class="comment-info-text">
+                                Это пятая зона, стоимость билета тридцать пять копеек, поезд идет час двадцать, северная ветка, ветка акации или, скажем, сирени, цветет белыми цветами, пахнет креозотом, пылью тамбура, куревом, маячит вдоль полосы отчуждения, вечером на цыпочках возвращается
+                                в сад и вслушивается в движение электрических поездов, вздрагивает от шорохов, потом цветы закрываются и спят, уступая настояниям заботливой птицы по имени найтингейл
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="comment" id="comment-3" style="display: none;">
+                        <div class="img comment-img"></div>
+                        <div class="comment-info">
+                            <p class="font-plus comment-info-date">02.02.2026</p>
+                            <p class="comment-info-name">Валентин Владиславович</p>
+                            <p class="comment-info-text">
+                                Это пятая зона, стоимость билета тридцать пять копеек, поезд идет час двадцать, северная ветка, ветка акации или, скажем, сирени, цветет белыми цветами, пахнет креозотом, пылью тамбура, куревом, маячит вдоль полосы отчуждения, вечером на цыпочках возвращается
+                                в сад и вслушивается в движение электрических поездов, вздрагивает от шорохов, потом цветы закрываются и спят, уступая настояниям заботливой птицы по имени найтингейл
+                            </p>
+                        </div>
+                    </div>
+
+                    <button class="next-comment but-icon" id="next-comment"></button>
+                </div>
+            </div>
+
+            <div class="section sec-subscription">
+                <div class="img sub-bg"></div>
+                <form class="subscription">
+                    <h3>Подпишитесь на нас, чтобы получить новости сервиса</h3>
+                    <label for="sub-email" class="form-field">
+                        <p>E-mail:</p>
+                        <input type="email" required id="sub-email" name="sub-email" placeholder="Начните вводить..">
+                    </label>
+
+                    <label for="sub-agree" class="form-agree">
+                        <input type="checkbox" required id="sub-agree" name="sub-agree">
+                        <p>Я согласен на обработку данных</p>
+                    </label>
+
+                    <button type="submit" class="but-main but-form">Подписаться</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="inner-footer">
+            <div class="logo-name-email-tel">
+                <a href="index.html">
+                    <div class="logo-name">
+                        <div class="img logo"></div>
+                        <div class="name">
+                            <h2>Автобусный мир</h2>
+                            <p>Поездки по РЯЗАНЩИНЕ</p>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="email-tel">
+                    <p> mail@busworld.ru</p>
+                    <p>8 (4912) 111-111</p>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-footer">
+                    <a class="nav-link" href="index.html">
+                        <li class="nav-opt">
+                            Главная
+                        </li>
+                    </a>
+                    <a class="nav-link" href="register.html">
+                        <li class="nav-opt">
+                            Регистрация
+                        </li>
+                    </a>
+                    <a class="nav-link" href="login.html">
+                        <li class="nav-opt">
+                            Авторизация
+                        </li>
+                    </a>
+                    <a class="nav-link" href="profile.html">
+                        <li class="nav-opt">
+                            Личный кабинет
+                        </li>
+                    </a>
+                    <a class="nav-link" href="booking.html">
+                        <li class="nav-opt">
+                            Регистрация на рейс
+                        </li>
+                    </a>
+                    <a class="nav-link" href="search.html">
+                        <li class="nav-opt">
+                            Поиск
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>

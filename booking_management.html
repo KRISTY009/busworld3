@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/code.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="inner-header">
+            <a href="index.html">
+                <div class="logo-name">
+                    <div class="img logo"></div>
+                    <div class="name">
+                        <h2>Автобусный мир</h2>
+                        <p>Поедки по РЯЗАНЩИНЕ</p>
+                    </div>
+                </div>
+            </a>
+
+            <div class="burnav" id="burnav">
+                <div class="hamburger-close" id="hamburger-close">
+                    <h2>Х</h2>
+                </div>
+                <ul class="nav-burnav">
+                    <a class="burnav-link" href="index.html#sec-sales">
+                        <li class="burnav-opt">
+                            Акции
+                        </li>
+                    </a>
+                    <a class="burnav-link" href="search.html">
+                        <li class="burnav-opt">
+                            Поиск
+                        </li>
+                    </a>
+                    <a class="burnav-link" href="booking.html">
+                        <li class="burnav-opt">
+                            Регистрация на рейс
+                        </li>
+                    </a>
+                    <a class="burnav-link" href="profile.html">
+                        <li class="burnav-opt">
+                            Личный кабинет
+                        </li>
+                    </a>
+                </ul>
+            </div>
+
+            <ul class="nav-header">
+                <a class="burnav-link" href="index.html#sec-sales">
+                    <li class="nav-opt">
+                        Акции
+                    </li>
+                </a>
+                <a class="burnav-link" href="search.html">
+                    <li class="nav-opt">
+                        Поиск
+                    </li>
+                </a>
+                <a class="burnav-link" href="booking.html">
+                    <li class="nav-opt">
+                        Регистрация на рейс
+                    </li>
+                </a>
+                <a class="burnav-link" href="profile.html">
+                    <li class="nav-opt">
+                        Личный кабинет
+                    </li>
+                </a>
+            </ul>
+
+            <div id="hamburger-button" class="hamburger-button">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+
+
+        </div>
+    </header>
+
+    <main>
+        <div class="inner-main">
+
+            <div class="section sec-form sec-booking-manage">
+                <form class="booking-manage">
+                    <h3>Управление бронированием</h3>
+
+                    <div class="form-sec form-sec-ride">
+                        <p class="font-header form-sec-header">Данные о рейсе:</p>
+                    
+                        <label for="book-manage-cost" class="form-field">
+                            <p>Стоимость бронирования:</p>
+                            <input type="text" id="book-manage-cost" name="book-manage-cost" placeholder="Начните вводить.." value="13 000р.">
+                        </label>
+
+                        <label for="book-manage-code" class="form-field">
+                            <p>Код бронирования:</p>
+                            <input type="text" id="book-manage-code" name="book-manage-code" placeholder="Начните вводить.." value="12345">
+                        </label>
+
+
+                    </div>
+
+                    <div class="form-sec form-sec-trip">
+                        <p class="font-header form-sec-header">Данные о поездке:</p>
+
+                        <label for="book-manage-trip" class="form-field">
+                            <p>Номер рейса:</p>
+                            <input type="text" id="book-manage-trip" name="book-manage-trip" placeholder="Начните вводить.." value="12345">
+                        </label>
+
+                        <label for="book-manage-auto" class="form-field">
+                            <p>Автобусный транспорт:</p>
+                            <input type="text" id="book-manage-auto" name="book-manage-auto" placeholder="Начните вводить.." value="Микроавтобус">
+                        </label>
+
+                        <label for="book-manage-from" class="form-field">
+                            <p>Название места отправления:</p>
+                            <div class="form-inputs" id="book-manage-from">
+                                <input type="text" id="book-manage-from-city" name="book-manage-from-city" placeholder="Начните вводить.." value="Рязань">
+                                <input type="text" id="book-manage-from-oot" name="book-manage-from-oot" placeholder="Начните вводить.." value="Кальное">
+                            </div>
+                        </label>
+
+                        <label for="book-manage-from-when" class="form-field">
+                            <p>Дата и время выезда:</p>
+                            <div class="form-inputs" id="book-manage-from">
+                                <input type="date" id="book-manage-from-when-date" name="book-manage-from-when-date" placeholder="Начните вводить.." value="2026-12-12">
+                                <input type="time" id="book-manage-from-when-time" name="book-manage-from-when-time" placeholder="Начните вводить.." value="13:00">
+                            </div>
+                        </label>
+
+                        <label for="book-manage-to" class="form-field">
+                            <p>Название места отправления:</p>
+                            <div class="form-inputs" id="book-manage-from">
+                                <input type="text" id="book-manage-to-city" name="book-manage-to-city" placeholder="Начните вводить.." value="с. Константиново">
+                                <input type="text" id="book-manage-to-oot" name="book-manage-to-oot" placeholder="Начните вводить.." value="с. Константиново">
+                            </div>
+                        </label>
+
+                        <label for="book-manage-to-when" class="form-field">
+                            <p>Дата и время выезда:</p>
+                            <div class="form-inputs" id="book-manage-from">
+                                <input type="date" id="book-manage-to-when-date" name="book-manage-to-when-date" placeholder="Начните вводить.." value="2026-12-12">
+                                <input type="time" id="book-manage-to-when-time" name="book-manage-to-when-time" placeholder="Начните вводить.." value="17:00">
+                            </div>
+                        </label>
+
+                        <label for="book-manage-chance" class="form-field">
+                            <p>Автобусный транспорт:</p>
+                            <div class="form-inputs" id="book-manage-chances">
+                                <input type="text" id="book-manage-chance" name="book-manage-chance" placeholder="Начните вводить.." value="50%">
+                                <div class="icon-more"></div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="form-sec form-sec-passengers">
+                        <p class="font-header form-sec-header">Данные о пассажирах:</p>
+
+                        <p>Пассажир 1:</p>
+
+                        <div class="passenger" id="passenger-1">
+                            <label for="book-passg-name" class="form-field">
+                                <p>ФИО:</p>
+                                <input type="text" id="book-passg-name" name="book-passg-name" placeholder="Начните вводить.." value="">
+                            </label>
+
+                            <label for="book-passg-date" class="form-field">
+                                <p>Дата рождения:</p>
+                                <input type="date" id="book-passg-date" name="book-passg-date" placeholder="Начните вводить.." value="">
+                            </label>
+
+                            <label for="book-passg-passport" class="form-field">
+                                <p>Пасспортные данные:</p>
+                                <input type="text" id="book-passg-passport" name="book-passg-passport" placeholder="Начните вводить.." value="">
+                            </label>
+
+                            <label for="book-del-pass" class="del-passenger book-manage">
+                                <p>Удалить пасссажира</p>
+                                <button class="but-icon but-minus"></button>
+                            </label>
+                        </div>
+                        
+                        <p>Пассажир 2:</p>
+
+                        <div class="passenger" id="passenger-2">
+                            <label for="book-passg-name" class="form-field">
+                                <p>ФИО:</p>
+                                <input type="text" id="book-passg-name" name="book-passg-name" placeholder="Начните вводить.." value="">
+                            </label>
+
+                            <label for="book-passg-date" class="form-field">
+                                <p>Дата рождения:</p>
+                                <input type="date" id="book-passg-date" name="book-passg-date" placeholder="Начните вводить.." value="">
+                            </label>
+
+                            <label for="book-passg-passport" class="form-field">
+                                <p>Пасспортные данные:</p>
+                                <input type="text" id="book-passg-passport" name="book-passg-passport" placeholder="Начните вводить.." value="">
+                            </label>
+
+                            <label for="book-del-pass" class="del-passenger book-manage">
+                                <p>Удалить пасссажира</p>
+                                <button class="but-icon but-minus "></button>
+                            </label>
+                        </div>
+
+                        <label for="book-plus-pass" class="plus-passenger book-manage">
+                            <p>Добавить пасссажира</p>
+                            <button class="but-icon but-plus "></button>
+                        </label>
+
+                    </div>
+                    
+                    <button type="button" class="but-main but-form" onclick="window.location='seat.html'">Выбор места</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="inner-footer">
+            <div class="logo-name-email-tel">
+                <a href="index.html">
+                    <div class="logo-name">
+                        <div class="img logo"></div>
+                        <div class="name">
+                            <h2>Автобусный мир</h2>
+                            <p>Поездки по РЯЗАНЩИНЕ</p>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="email-tel">
+                    <p> mail@busworld.ru</p>
+                    <p>8 (4912) 111-111</p>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-footer">
+                    <a class="nav-link" href="index.html">
+                        <li class="nav-opt">
+                            Главная
+                        </li>
+                    </a>
+                    <a class="nav-link" href="register.html">
+                        <li class="nav-opt">
+                            Регистрация
+                        </li>
+                    </a>
+                    <a class="nav-link" href="login.html">
+                        <li class="nav-opt">
+                            Авторизация
+                        </li>
+                    </a>
+                    <a class="nav-link" href="profile.html">
+                        <li class="nav-opt">
+                            Личный кабинет
+                        </li>
+                    </a>
+                    <a class="nav-link" href="booking.html">
+                        <li class="nav-opt">
+                            Регистрация на рейс
+                        </li>
+                    </a>
+                    <a class="nav-link" href="search.html">
+                        <li class="nav-opt">
+                            Поиск
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
