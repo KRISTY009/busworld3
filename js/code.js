@@ -57,7 +57,7 @@ let but_swap = document.getElementById('but-swap'),
     list_opts_to = [].slice.call(document.getElementsByClassName('opt-to')),
     list_opts_from = [].slice.call(document.getElementsByClassName('opt-from'));
 
-let list_icon_info = [].slice.call(document.getElementsByClassName('icon-more')),
+let list_icon_info = [].slice.call(document.getElementsByClassName('stat')),
     list_icon_info_about = [].slice.call(document.getElementsByClassName('icon-more-about'));
 
 try {
@@ -346,6 +346,17 @@ list_opts_to.forEach(element => {
 
 try {
 for (let i; i < list_icon_info.length; i++) {
-    
+    list_icon_info[i].addEventListener('click', () => {
+        console.log('1');
+        if (list_icon_info_about[i].style.display == 'none') {
+            list_icon_info_about[i].style.display = 'flex';
+        } else {
+            list_icon_info_about[i].style.display = 'none';
+        }
+    })
 }
+
+
+} catch (error) {
+    console.log(error);
 }
